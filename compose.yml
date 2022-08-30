@@ -17,6 +17,8 @@ services:
      tty: true
      stdin_open: true
      environment:
+       PGUID: 1000
+       PUID: 1000
        PYTHONWARNINGS: default
      build:
        context: .
