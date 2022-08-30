@@ -12,3 +12,15 @@ services:
      volumes:
        - .:/home
      command: ./get-curious.py
+
+  eth:
+     tty: true
+     stdin_open: true
+     build:
+       context: .
+       dockerfile: Dockerfile
+     volumes:
+       - .:/home
+     command: ./eth.py
+
+
